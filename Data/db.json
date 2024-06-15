@@ -1,0 +1,413 @@
+{
+  "companies": [
+    {
+      "id": 1,
+      "name": "Artisanal Creations",
+      "logoUrl": "../src/component/homePage/homeDiv2/company1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Crafted Wonders",
+      "logoUrl": "../src/component/homePage/homeDiv2/company2.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Handmade Delights",
+      "logoUrl": "../src/component/homePage/homeDiv2/company3.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Artistic Treasures",
+      "logoUrl": "../src/component/homePage/homeDiv2/company4.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Creative Crafts Co.",
+      "logoUrl": "../src/component/homePage/homeDiv2/company5.jpg"
+    }
+  ],
+  "services": [
+    {
+      "id": "Handmade",
+      "image_link": "#"
+    },
+    {
+      "id": "Decor",
+      "image_link": "#"
+    },
+    {
+      "id": "Accessories",
+      "image_link": "#"
+    },
+    {
+      "id": "Seasonal Crafts",
+      "image_link": "#"
+    },
+    {
+      "id": "Custom Orders",
+      "image_link": "#"
+    },
+    {
+      "id": "Customer Favorites",
+      "image_link": "#"
+    },
+    {
+      "id": "Gift Ideas",
+      "image_link": "#"
+    },
+    {
+      "id": "Art & Sculpture",
+      "image_link": "#"
+    },
+    {
+      "id": "Fashion & Apparel",
+      "image_link": "#"
+    }
+  ],
+  "servicesSubtype": [
+    {
+      "Handmade": [
+        {
+          "id": "Jewelry",
+          "image_link": "#"
+        },
+        {
+          "id": "Home Decor",
+          "image_link": "#"
+        },
+        {
+          "id": "Accessories",
+          "image_link": "#"
+        },
+        {
+          "id": "Seasonal Crafts",
+          "image_link": "#"
+        },
+        {
+          "id": "Custom Orders",
+          "image_link": "#"
+        },
+        {
+          "id": "Customer Favorites",
+          "image_link": "#"
+        },
+        {
+          "id": "Gift Ideas",
+          "image_link": "#"
+        },
+        {
+          "id": "Art & Sculpture",
+          "image_link": "#"
+        },
+        {
+          "id": "Fashion & Apparel",
+          "image_link": "#"
+        }
+      ],
+      "Decor": [
+        {
+          "id": "Wall Art",
+          "image_link": "#"
+        },
+        {
+          "id": "Candles & Holders",
+          "image_link": "#"
+        },
+        {
+          "id": "Rugs & Mats",
+          "image_link": "#"
+        },
+        {
+          "id": "Furniture",
+          "image_link": "#"
+        },
+        {
+          "id": "Tabletop Decor",
+          "image_link": "#"
+        },
+        {
+          "id": "Lighting",
+          "image_link": "#"
+        },
+        {
+          "id": "Mirrors",
+          "image_link": "#"
+        },
+        {
+          "id": "Clocks",
+          "image_link": "#"
+        },
+        {
+          "id": "Planters & Vases",
+          "image_link": "#"
+        }
+      ],
+      "Accessories": [
+        {
+          "id": "Bags & Purses",
+          "image_link": "#"
+        },
+        {
+          "id": "Scarves & Shawls",
+          "image_link": "#"
+        },
+        {
+          "id": "Hats & Caps",
+          "image_link": "#"
+        },
+        {
+          "id": "Belts & Buckles",
+          "image_link": "#"
+        },
+        {
+          "id": "Jewelry",
+          "image_link": "#"
+        },
+        {
+          "id": "Sunglasses",
+          "image_link": "#"
+        },
+        {
+          "id": "Wallets",
+          "image_link": "#"
+        },
+        {
+          "id": "Gloves & Mittens",
+          "image_link": "#"
+        },
+        {
+          "id": "Hair Accessories",
+          "image_link": "#"
+        }
+      ],
+      "Seasonal Crafts": [
+        {
+          "id": "Christmas Decorations",
+          "image_link": "#"
+        },
+        {
+          "id": "Halloween Crafts",
+          "image_link": "#"
+        },
+        {
+          "id": "Easter Crafts",
+          "image_link": "#"
+        },
+        {
+          "id": "Valentine's Day Gifts",
+          "image_link": "#"
+        },
+        {
+          "id": "Spring Decor",
+          "image_link": "#"
+        },
+        {
+          "id": "Summer Crafts",
+          "image_link": "#"
+        },
+        {
+          "id": "Autumn Decor",
+          "image_link": "#"
+        },
+        {
+          "id": "Winter Crafts",
+          "image_link": "#"
+        },
+        {
+          "id": "Holiday Ornaments",
+          "image_link": "#"
+        }
+      ],
+      "Custom Orders": [
+        {
+          "id": "Personalized Gifts",
+          "image_link": "#"
+        },
+        {
+          "id": "Custom Jewelry",
+          "image_link": "#"
+        },
+        {
+          "id": "Bespoke Furniture",
+          "image_link": "#"
+        },
+        {
+          "id": "Tailored Clothing",
+          "image_link": "#"
+        },
+        {
+          "id": "Made-to-Order Art",
+          "image_link": "#"
+        },
+        {
+          "id": "Custom Home Decor",
+          "image_link": "#"
+        },
+        {
+          "id": "Unique Craft Projects",
+          "image_link": "#"
+        },
+        {
+          "id": "Commissioned Sculptures",
+          "image_link": "#"
+        },
+        {
+          "id": "Personalized Accessories",
+          "image_link": "#"
+        }
+      ],
+      "Customer Favorites": [
+        {
+          "id": "Best Sellers",
+          "image_link": "#"
+        },
+        {
+          "id": "Top Rated Products",
+          "image_link": "#"
+        },
+        {
+          "id": "Most Loved Gifts",
+          "image_link": "#"
+        },
+        {
+          "id": "Highly Recommended",
+          "image_link": "#"
+        },
+        {
+          "id": "Customer Reviewed",
+          "image_link": "#"
+        },
+        {
+          "id": "Popular Items",
+          "image_link": "#"
+        },
+        {
+          "id": "Trending Crafts",
+          "image_link": "#"
+        },
+        {
+          "id": "Fan Favorites",
+          "image_link": "#"
+        },
+        {
+          "id": "Recommended Picks",
+          "image_link": "#"
+        }
+      ],
+      "Gift Ideas": [
+        {
+          "id": "Gifts for Her",
+          "image_link": "#"
+        },
+        {
+          "id": "Gifts for Him",
+          "image_link": "#"
+        },
+        {
+          "id": "Gifts for Kids",
+          "image_link": "#"
+        },
+        {
+          "id": "Unique Presents",
+          "image_link": "#"
+        },
+        {
+          "id": "Personalized Gifts",
+          "image_link": "#"
+        },
+        {
+          "id": "Special Occasion Gifts",
+          "image_link": "#"
+        },
+        {
+          "id": "Holiday Gifts",
+          "image_link": "#"
+        },
+        {
+          "id": "Anniversary Gifts",
+          "image_link": "#"
+        },
+        {
+          "id": "Birthday Gifts",
+          "image_link": "#"
+        }
+      ],
+      "Art & Sculpture": [
+        {
+          "id": "Paintings",
+          "image_link": "#"
+        },
+        {
+          "id": "Sculptures",
+          "image_link": "#"
+        },
+        {
+          "id": "Mixed Media Art",
+          "image_link": "#"
+        },
+        {
+          "id": "Pottery & Ceramics",
+          "image_link": "#"
+        },
+        {
+          "id": "Wood Art",
+          "image_link": "#"
+        },
+        {
+          "id": "Glass Art",
+          "image_link": "#"
+        },
+        {
+          "id": "Metal Art",
+          "image_link": "#"
+        },
+        {
+          "id": "Textile Art",
+          "image_link": "#"
+        },
+        {
+          "id": "Digital Art",
+          "image_link": "#"
+        }
+      ],
+      "Fashion & Apparel": [
+        {
+          "id": "Clothing",
+          "image_link": "#"
+        },
+        {
+          "id": "Shoes",
+          "image_link": "#"
+        },
+        {
+          "id": "Bags & Purses",
+          "image_link": "#"
+        },
+        {
+          "id": "Accessories",
+          "image_link": "#"
+        },
+        {
+          "id": "Jewelry",
+          "image_link": "#"
+        },
+        {
+          "id": "Watches",
+          "image_link": "#"
+        },
+        {
+          "id": "Hats & Caps",
+          "image_link": "#"
+        },
+        {
+          "id": "Scarves & Shawls",
+          "image_link": "#"
+        },
+        {
+          "id": "Belts & Buckles",
+          "image_link": "#"
+        }
+      ]
+    }
+  ]
+}
