@@ -1,5 +1,4 @@
 import React from "react";
-import craftImage from "../images/paper1.png"; // Example image, replace with your own image
 import handmadeJewelry from '../images/Handmade Jewellry.png';
 import homedecor from "../images/Home Decor.png";
 import accessories from "../images/Accessories.png";
