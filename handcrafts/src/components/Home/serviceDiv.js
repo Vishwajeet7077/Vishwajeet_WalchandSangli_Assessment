@@ -2,25 +2,26 @@ import React, { useState, useEffect } from "react";
 import '../styles/homediv4.css';
 import axios from "axios";
 
+// const serviceSubType = process.env.REACT_APP_SERVICESUBTYPE_API;
 function ServiceCards(props) {
   const [ServiceIds, setServiceIds] = useState([]);
   const [imageLinks, setImageLinks] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:1000/servicesSubtype')
+    axios.get("http://localhost:1030/servicesSubtype")
       .then(response => {
         const serviceSubtypes = response.data.find(item => item[props.serviceName]);
-
+  
         if (serviceSubtypes) {
           const serviceTypes = serviceSubtypes[props.serviceName];
           const ids = serviceTypes.map(service => service.id);
           setServiceIds(ids);
-
+  
           // Fetch random images
           const fetchImages = ids.map(() =>
             axios.get('https://picsum.photos/200/300', { responseType: 'blob' })
           );
-
+  
           Promise.all(fetchImages)
             .then(responses => {
               const urls = responses.map(response => URL.createObjectURL(response.data));
@@ -32,9 +33,16 @@ function ServiceCards(props) {
         }
       })
       .catch(error => {
-        console.error('Axios error:', error);
+        if (error.response) {
+          console.error('Response error:', error.response.status, error.response.data);
+        } else if (error.request) {
+          console.error('Request error:', error.request);
+        } else {
+          console.error('Error:', error.message);
+        }
       });
   }, [props.serviceName]);
+  
 
   return (
     <div className="flex flex-row overflow-x-auto border-2 card-container mt-4 rounded-xl bg-customBackground-100 scrollbar-hide">

@@ -2,8 +2,10 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
-import { faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faInstagram, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import companyIcon from "../images/tata.jpg";
+
+// const serviceList = process.env.REACT_APP_SERVICES_API;
 const Footer = () => {
   const [footerData, setFooterData] = useState({
     companies: [],
@@ -14,19 +16,19 @@ const Footer = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const companiesResponse = await fetch("http://localhost:1000/companies");
+        const companiesResponse = await fetch("http://localhost:1030/companies");
         if (!companiesResponse.ok) {
           throw new Error("Network response was not ok");
         }
         const companiesData = await companiesResponse.json();
 
-        const servicesResponse = await fetch("http://localhost:1000/services");
+        const servicesResponse = await fetch("http://localhost:1030/services");
         if (!servicesResponse.ok) {
           throw new Error("Network response was not ok");
         }
         const servicesData = await servicesResponse.json();
 
-        const servicesSubtypeResponse = await fetch("http://localhost:1000/servicesSubtype");
+        const servicesSubtypeResponse = await fetch("http://localhost:1030/servicesSubtype");
         if (!servicesSubtypeResponse.ok) {
           throw new Error("Network response was not ok");
         }
@@ -82,11 +84,19 @@ const Footer = () => {
         </li>
         <li className="mb-2 flex items-center">
           <FontAwesomeIcon icon={faPhone} className="mr-2" />
-          <pre>Phone No   <i>7384848484</i></pre>
+          <pre>Phone No   <i>+91 7384848484</i></pre>
         </li>
         <li className="mb-2 flex items-center">
           <FontAwesomeIcon icon={faInstagram} className="mr-2" />
           <pre>Instagram  <i>HandCraft_247</i></pre>
+        </li>
+        <li className="mb-2 flex items-center">
+          <FontAwesomeIcon icon={faTwitter} className="mr-2" />
+          <pre>Twitter    <i>HandCraft_247</i></pre>
+        </li>
+        <li className="mb-2 flex items-center">
+          <FontAwesomeIcon icon={faFacebook} className="mr-2" />
+          <pre>FaceBook   <i>HandCraft_247</i></pre>
         </li>
         <li className="mb-2 flex items-center">
           <FontAwesomeIcon icon={faYoutube} className="mr-2" />
