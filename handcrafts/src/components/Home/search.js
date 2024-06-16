@@ -6,8 +6,8 @@ function SearchBar() {
     return (
         <div className="h-10 border-2 border-slate-400 m-3 rounded-lg p-1 flex items-center space-x-1 overflow-hidden">
             <div className="flex items-center ml-4">
-                <img className="h-7" src={searchIcon} alt="Search" />
-                <input className="w-40 h-7 ml-2 rounded-sm pl-2 mr-6 focus:ring-2 focus:ring-blue-500" type="text" placeholder="Search" />
+                <img className="h-7 w-10 rounded-xl" src={searchIcon} alt="Search" />
+                <input className="w-64 h-7 ml-2 rounded-xl pl-2 mr-6 focus:ring-2 focus:ring-blue-500" type="text" placeholder="Search" />
             </div>
             <div className="flex-grow text-xl ml-2 text-gray-700 overflow-hidden">
                 <p className="m-0">

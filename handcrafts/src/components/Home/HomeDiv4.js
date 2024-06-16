@@ -4,9 +4,10 @@ import '../styles/homediv4.css';
 import axios from "axios";
 import ServiceCards from "./serviceDiv";
 
+const ServicesMeta = process.env.REACT_APP_SERVICES_API;
 function HomeDiv4() {
 
-    const ServicesMeta = "http://localhost:1000/services";
+    // const ServicesMeta = "http://localhost:1000/services";
 
     const [serviceDiv, setServiceDiv] = useState([]);
     const [errorMessage, setError] = useState('');
