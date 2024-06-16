@@ -1,4 +1,6 @@
 import React from "react";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import handmadeJewelry from '../images/Handmade Jewellry.png';
 import homedecor from "../images/Home Decor.png";
 import accessories from "../images/Accessories.png";

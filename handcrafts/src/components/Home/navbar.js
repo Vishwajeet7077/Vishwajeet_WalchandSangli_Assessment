@@ -44,7 +44,7 @@ function Navbar() {
       </div>
 
       {/* Navbar */}
-      <nav className="p-4 h-18 m-2 border-2 rounded-2xl text-xl bg-nav-img bg-cover">
+      <nav className="p-4 h-18 m-2 mt-0 border-2 rounded-2xl text-xl bg-nav-img bg-cover">
         <div className="container mx-auto">
           <div className="flex justify-between items-center">
             <div className="font-bold text-2xl font-playwrite-fr-moderne">HandCrafts</div>
