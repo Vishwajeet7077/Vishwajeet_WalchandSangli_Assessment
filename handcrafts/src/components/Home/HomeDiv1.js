@@ -8,6 +8,9 @@ import seasonalCraft from "../images/830x830/seasonal craft.png";
 import customerOrder from "../images/830x830/customer order.png";
 import customerFavorite from "../images/830x830/customer favorite.png";
 import boy from "../images/boy-holding-big-pencil.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowAltCircleUp } from "@fortawesome/free-solid-svg-icons";
+
 function HDiv1() {
     return (
         <div className="min-h-max border-2 border-slate-400 m-3 flex flex-col sm:flex-row rounded-xl ">
@@ -46,7 +49,7 @@ function HDiv1() {
                     <p className="mt-2">Customer Favorites</p>
                 </div>
             </div>
-
+            <a href="#navbar" className="fixed bottom-10 right-10 w-12 h-12 rounded-3xl bg-white z-40 p-2"><FontAwesomeIcon icon={faArrowAltCircleUp} size="2x" /></a>
         </div>
     );
 }

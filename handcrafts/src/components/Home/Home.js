@@ -7,6 +7,7 @@ import HomeDiv3 from "./HomeDiv3";
 import HomeDiv4 from "./HomeDiv4";
 import Footer from "./Footer";
 import ContactForm from "./contact";
+import AboutSection from "./AboutSection";
 
 function Home() {
     const [contactForm, setContactForm] = useState(false);
@@ -21,6 +22,7 @@ function Home() {
                 <HomeDiv1 />
                 <HomeDiv2 />
                 <HomeDiv3 />
+                <AboutSection />
                 <HomeDiv4 />
                 {contactForm && <ContactForm displayContact={displayContact} />} {/* Conditionally render ContactForm */}
             </div>

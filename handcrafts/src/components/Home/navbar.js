@@ -42,6 +42,9 @@ function Navbar({displayContact}) {
             <a href="#products" className="block px-4 py-2 hover:bg-gray-300">Product</a>
           </li>
           <li>
+            <a href="#about" className="block px-4 py-2 hover:bg-gray-300">About</a>
+          </li>
+          <li>
             <a href="#" onClick={navContact}  className="block px-4 py-2 hover:bg-gray-300">Contact</a>
           </li>
         </ul>
@@ -62,7 +65,7 @@ function Navbar({displayContact}) {
             ) : (
               <ul className="hidden sm:flex space-x-4 font-roboto">
                 <li>
-                  <a href="#navbar" className=" hover:font-size-[1.2em]">Home</a>
+                  <a href="#about" className=" hover:font-size-[1.2em]">About</a>
                 </li>
                 <li>
                   <a href="#products" className=" hover:font-size-[1.2em]">Product</a>
