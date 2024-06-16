@@ -49,14 +49,17 @@
   <h2>Setup Instructions</h2>
   <ol>
     <li><strong>Clone the repository</strong>:
-      <pre><code>git clone https://github.com/Vishwajeet7077/handcraft</code></pre>
+      <pre><code>git clone https://github.com/Vishwajeet7077/Vishwajeet_WalchandSangli_Assignment</code></pre>
     </li>
     <li><strong>Install dependencies</strong>:
-      <pre><code>cd handcraft <br>npm install</code></pre>
+      <pre><code>cd Vishwajeet_WalchandSangli_Assignment</code><br>
+<code>npm install</code></pre>
     </li>
     <li><strong>Create a .env file</strong> in the root directory and add the following:
       <pre><code>REACT_APP_SERVICES_API=http://localhost:1030/services
-REACT_APP_COMPANY_API=http://localhost:1030/companies</code></pre>
+REACT_APP_COMPANY_API=http://localhost:1030/companies
+REACT_APP_SERVICES_SUBTYPE_API=http://localhost:1030/servicesSubtype
+      </code></pre>
       <p><strong>Note:</strong> Replace <code>1030</code> with your desired port number for the JSON server.</p>
     </li>
     <li><strong>Start the JSON server</strong>:
@@ -65,7 +68,7 @@ REACT_APP_COMPANY_API=http://localhost:1030/companies</code></pre>
           <pre><code>npm install -g json-server</code></pre>
         </li>
         <li>Start the JSON Server on port 1030 (or your chosen port):
-          <pre><code>json-server --watch db.json --port 1030</code></pre>
+          <pre><code>json-server --watch Data/db.json --port 1030</code></pre>
         </li>
         <li>Make sure your <code>db.json</code> file contains the following data structure:
           <pre>
