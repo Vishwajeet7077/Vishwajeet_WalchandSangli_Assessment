@@ -49,10 +49,10 @@
   <h2>Setup Instructions</h2>
   <ol>
     <li><strong>Clone the repository</strong>:
-      <pre><code>git clone https://github.com/Vishwajeet7077/Vishwajeet_WalchandSangli_Assignment</code></pre>
+      <pre><code>git clone https://github.com/Vishwajeet7077/Vishwajeet_WalchandSangli_Assessment</code></pre>
     </li>
     <li><strong>Install dependencies</strong>:
-      <pre><code>cd Vishwajeet_WalchandSangli_Assignment</code><br>
+      <pre><code>cd Vishwajeet_WalchandSangli_Assessment</code><br>
 <code>npm install</code></pre>
     </li>
     <li><strong>Create a .env file</strong> in the root directory and add the following:
