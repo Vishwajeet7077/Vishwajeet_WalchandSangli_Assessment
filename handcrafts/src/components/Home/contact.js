@@ -49,7 +49,7 @@ function ContactForm({ displayContact }) {
         <form
             onSubmit={handleSubmit}
             id="displayContact"
-            className="shadow-md rounded-xl px-4 pt-3 pb-8 mb-4 bg-nav-img2 absolute left-1/2 top-10 transform -translate-x-1/2 w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl h-[40vh] sm:h-[40vh] md:h-auto lg:h-auto top-[10vh]"
+            className="shadow-md rounded-xl px-4 pt-3 pb-8 mb-4 bg-nav-img2 absolute left-1/2 top-10 transform -translate-x-1/2 w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl h-[400px] sm:h-[60vh] md:h-auto lg:h-auto top-[10vh]"
         >
             <div className="mb-4">
                 <label className="inline-block text-gray-700 text-sm font-bold mb-2 mr-8" htmlFor="name">
