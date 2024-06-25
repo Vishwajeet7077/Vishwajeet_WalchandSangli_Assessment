@@ -1,6 +1,6 @@
 import React from "react";
 import searchIcon from "../images/searchIcon.jpg";
-import "../styles/searchbar.css"; // Import your custom CSS file
+import "../styles/searchbar.css"; 
 
 function SearchBar() {
     return (

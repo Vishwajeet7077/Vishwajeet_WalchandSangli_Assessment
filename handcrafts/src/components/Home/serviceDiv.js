@@ -2,13 +2,13 @@ import React, { useState, useEffect } from "react";
 import '../styles/homediv4.css';
 import axios from "axios";
 
-// const serviceSubType = process.env.REACT_APP_SERVICESUBTYPE_API;
+const serviceSubTypeURL = process.env.REACT_APP_SERVICES_SUBTYPE_API;
 function ServiceCards(props) {
   const [ServiceIds, setServiceIds] = useState([]);
   const [imageLinks, setImageLinks] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:1030/servicesSubtype")
+    axios.get(serviceSubTypeURL)
       .then(response => {
         const serviceSubtypes = response.data.find(item => item[props.serviceName]);
   
@@ -34,11 +34,11 @@ function ServiceCards(props) {
       })
       .catch(error => {
         if (error.response) {
-          console.error('Response error:', error.response.status, error.response.data);
+          console.error('Response error Service Div:', error.response.status, error.response.data);
         } else if (error.request) {
-          console.error('Request error:', error.request);
+          console.error('Request error Service Div:', error.request);
         } else {
-          console.error('Error:', error.message);
+          console.error('Error Service Div:', error.message);
         }
       });
   }, [props.serviceName]);
@@ -48,7 +48,7 @@ function ServiceCards(props) {
     <div className="flex flex-row overflow-x-auto border-2 card-container mt-4 rounded-xl bg-customBackground-100 scrollbar-hide">
       <div className="animate-scroll flex">
         {ServiceIds.map((id, index) => (
-          <div className="company-card transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:shadow-indigo-500/40 duration-300 m-2" key={id}>
+          <div className="service-card transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:shadow-indigo-500/40 duration-300 m-2" key={id}>
             <div className="flipCard">
               <div className="flip-card-front flex flex-col items-center" style={{ minWidth: "120px", maxWidth: "200px" }}>
                 <div className="h-32 w-32 object-cover rounded-lg shadow-lg mt-2">

@@ -5,39 +5,32 @@ import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faInstagram, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import companyIcon from "../images/tata.jpg";
 
-// const serviceList = process.env.REACT_APP_SERVICES_API;
+const serviceList = process.env.REACT_APP_SERVICES_API;
+const companyList  = process.env.REACT_APP_COMPANY_API;
 const Footer = () => {
   const [footerData, setFooterData] = useState({
     companies: [],
     services: [],
-    servicesSubtype: {}
   });
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const companiesResponse = await fetch("http://localhost:1030/companies");
+        const companiesResponse = await fetch(companyList);
         if (!companiesResponse.ok) {
           throw new Error("Network response was not ok");
         }
         const companiesData = await companiesResponse.json();
 
-        const servicesResponse = await fetch("http://localhost:1030/services");
+        const servicesResponse = await fetch(serviceList);
         if (!servicesResponse.ok) {
           throw new Error("Network response was not ok");
         }
         const servicesData = await servicesResponse.json();
 
-        const servicesSubtypeResponse = await fetch("http://localhost:1030/servicesSubtype");
-        if (!servicesSubtypeResponse.ok) {
-          throw new Error("Network response was not ok");
-        }
-        const servicesSubtypeData = await servicesSubtypeResponse.json();
-
         setFooterData({
           companies: companiesData,
           services: servicesData,
-          servicesSubtype: servicesSubtypeData
         });
       } catch (error) {
         console.error("Error fetching data:", error);

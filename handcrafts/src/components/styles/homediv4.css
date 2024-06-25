@@ -1,4 +1,4 @@
-.company-card {
+.service-card {
     width: 150px;
     height: 200px;
     border: 2px solid #3498db;
@@ -10,10 +10,10 @@
     margin-top: 30px;
     text-align: center;
     font-size: inherit;
-    perspective: 1000px; /* Add perspective */
+    perspective: 1000px; 
   }
   
-  .company-logo {
+  .service-logo {
     height: 100%;
     max-width: 100%;
     border-radius: 20px;
@@ -42,7 +42,7 @@
   
   .animate-scroll {
     /* display: flex;
-    animation: scroll 10s linear infinite;
+    animation: scroll 30s linear infinite;
     width: calc(100% * 2);  */
     /* Double the width for seamless scrolling */
   }
@@ -55,7 +55,7 @@
     transform-style: preserve-3d;
   }
   
-  .company-card:hover .flipCard {
+  .service-card:hover .flipCard {
     transform: rotateY(180deg);
   }
   

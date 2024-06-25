@@ -1,5 +1,3 @@
-// AboutSection.jsx
-
 import React from 'react';
 
 const AboutSection = () => {
@@ -12,7 +10,7 @@ const AboutSection = () => {
                         HandCraft is dedicated to bringing you unique, handmade crafts that are crafted with passion and dedication. We strive to use sustainable materials and traditional techniques to create products that are both beautiful and eco-friendly.
                     </p>
                     <p className="text-lg text-gray-600 leading-relaxed mt-4">
-                        Our journey began in [year], when we started our small workshop with the dream of sharing our love for handmade crafts with the world. Since then, we have grown into a small business known for our quality and craftsmanship.
+                        Our journey began in 2023, when we started our small workshop with the dream of sharing our love for handmade crafts with the world. Since then, we have grown into a small business known for our quality and craftsmanship.
                     </p>
                 </div>
             </div>

@@ -1,27 +1,32 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect, useRef } from 'react';
 
-function Navbar({displayContact}) {
+function Navbar({ displayContact }) {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 640);
+  const isInitialMount = useRef(true);
 
   const toggleSidebar = () => {
     setSidebarOpen(!isSidebarOpen);
   };
 
   useEffect(() => {
-    const handleResize = () => {
-      setIsSmallScreen(window.innerWidth <= 640);
-    };
+    if (isInitialMount.current) {
+      isInitialMount.current = false;
+    } else {
+      const handleResize = () => {
+        setIsSmallScreen(window.innerWidth <= 640);
+      };
 
-    window.addEventListener('resize', handleResize);
+      window.addEventListener('resize', handleResize);
 
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    }
+
   }, [setIsSmallScreen]);
 
-  const navContact=()=>{
+  const navContact = () => {
     toggleSidebar();
     displayContact();
   }
@@ -45,7 +50,7 @@ function Navbar({displayContact}) {
             <a href="#about" className="block px-4 py-2 hover:bg-gray-300">About</a>
           </li>
           <li>
-            <a href="#" onClick={navContact}  className="block px-4 py-2 hover:bg-gray-300">Contact</a>
+            <a href="#" onClick={navContact} className="block px-4 py-2 hover:bg-gray-300">Contact</a>
           </li>
         </ul>
       </div>
